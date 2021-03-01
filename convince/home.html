@@ -1,1 +1,171 @@
+<html>
+<head>
+  <title>Jordan's Website</title>
+</head>
 
+  <body>
+    <div class="topper">
+    <img src="https://cdn.discordapp.com/attachments/806214473504260116/815856478585618452/spookyname.png" class="title">
+    </div>
+  <div class="navbar">
+<ul>
+  <div id="arro">
+    <img src="https://cdn.discordapp.com/attachments/806214473504260116/815858299420934144/arrowmove.gif" id="arrow">
+  <li><a href="index.html">Back to Home</a></li>
+  </div>
+</ul>
+  </div>
+
+  
+    <img class="pal" src="https://cdn.discordapp.com/attachments/806214473504260116/815812278414737438/ghostsarereal.png">
+    
+    <div id="gold">
+      <img src="https://cdn.discordapp.com/attachments/806214473504260116/816029516824576000/Gold_Ghost_LM.png">
+    </div>
+  
+    <div id="pink">
+      <img src="https://cdn.discordapp.com/attachments/806214473504260116/816029526593110028/PurplePuncher.png">
+    </div>
+    
+    <div>
+      <img src="https://cdn.discordapp.com/attachments/806214473504260116/815995538292998225/midiv.png" id="cyandiv">
+    </div>
+    
+    
+    
+</body>
+
+  <style>
+    
+    @font-face {
+    font-family: 'green_fuzregular';
+    src: url('green_fuz-webfont.woff2') format('woff2'),
+         url('green_fuz-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: color;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'green_fuzregular';
+}
+
+li a:hover {
+  background-color: #c5283d;
+  transition: 0.5s;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+body {
+ background: rgb(7,96,0);
+background: linear-gradient(360deg, rgba(7,96,0,1) 0%, rgba(8,8,8,1) 100%);
+  
+}
+
+.pal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 600px;
+  position: relative;
+  z-index:-2
+}
+
+.pa {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.title {
+  width: 20%;
+  height: 20%;
+}
+
+.topper {
+  background-color: #111;
+}
+
+#arrow {
+  width: 80px;
+  float: left
+}
+
+#arro {
+  z-index: 5;
+}
+
+#cyandiv {
+  width: 100%;
+  height: 750px;
+  transform: translate(0px,-800px);
+  z-index: -1;
+  position: relative
+}
+
+#gold {
+  position: relative;
+  z-index: 0;
+  transform: rotate(15deg);
+  width: 324px;
+  height: 301px;
+  animation-name: gold;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes gold {
+  0% {transform: translate(300px, -350px) rotate(15deg);}
+  50% {transform: translate(300px, -325px) rotate(15deg);}
+  100% {transform: translate(300px, -350px) rotate(15deg);}
+}
+
+#pink {
+  position: relative;
+  z-index: 0;
+  width: 324px;
+  height: 301px;
+  animation-name: pink;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: -2s;
+}
+
+@keyframes pink {
+  0% {transform: translate(1000px, -650px) rotate(-15deg);}
+  50% {transform: translate(1000px, -625px) rotate(-15deg);}
+  100% {transform: translate(1000px, -650px) rotate(-15deg);}
+}
+    
+    
+    
+    
+  
+  
+  </style>
+
+
+</html>
