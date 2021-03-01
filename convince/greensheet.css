@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'green_fuzregular';
+    src: url('green_fuz-webfont.woff2') format('woff2'),
+         url('green_fuz-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
