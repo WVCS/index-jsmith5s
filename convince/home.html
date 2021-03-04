@@ -153,12 +153,11 @@ background: linear-gradient(360deg, rgba(0,0,0,1) 10%, rgba(7,96,0,1) 50%, rgba(
 
 .title {
   width: 20%;
-  height: 20%;
 }
 
 .topper {
   background-color: #111;
-  transform: translate(0px,-70px)
+  transform: translate(0px,-100px)
 }
 
 #botter {
@@ -192,6 +191,9 @@ background: linear-gradient(360deg, rgba(0,0,0,1) 10%, rgba(7,96,0,1) 50%, rgba(
 
 #gold {
   position: relative;
+  display: block;
+  margin-left: 20%;
+  margin-right: auto;
   z-index: 0;
   transform: rotate(15deg);
   width: 324px;
@@ -202,13 +204,16 @@ background: linear-gradient(360deg, rgba(0,0,0,1) 10%, rgba(7,96,0,1) 50%, rgba(
 }
 
 @keyframes gold {
-  0% {transform: translate(300px, -350px) rotate(15deg);}
-  50% {transform: translate(300px, -325px) rotate(15deg);}
-  100% {transform: translate(300px, -350px) rotate(15deg);}
+  0% {transform: translate(0px, -350px) rotate(15deg);}
+  50% {transform: translate(0px, -325px) rotate(15deg);}
+  100% {transform: translate(0px, -350px) rotate(15deg);}
 }
 
 #pink {
   position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: 15%;
   z-index: 0;
   width: 324px;
   height: 301px;
@@ -219,18 +224,22 @@ background: linear-gradient(360deg, rgba(0,0,0,1) 10%, rgba(7,96,0,1) 50%, rgba(
 }
 
 @keyframes pink {
-  0% {transform: translate(1000px, -650px) rotate(-15deg);}
-  50% {transform: translate(1000px, -625px) rotate(-15deg);}
-  100% {transform: translate(1000px, -650px) rotate(-15deg);}
+  0% {transform: translate(0px, -650px) rotate(-15deg);}
+  50% {transform: translate(0px, -625px) rotate(-15deg);}
+  100% {transform: translate(0px, -650px) rotate(-15deg);}
 }
 
 #doyou {
-  transform: translate(800px,-1375px);
+  transform: translate(0px,-1375px);
+  margin-right: 0%;
+  margin-left: 50%;
   box-shadow: 0px 10px 10px black
 }
 
 #blinkghost {
-  transform: translate(150px,-1575px)
+  transform: translate(0px,-1625px);
+  display: block;
+  margin-left: 15%;
 }
 
 .divorder {
@@ -241,13 +250,17 @@ background: linear-gradient(360deg, rgba(0,0,0,1) 10%, rgba(7,96,0,1) 50%, rgba(
 #presome {
   font-family: fantasy;
   color: white;
-  font-size: 25px;
-  transform: translate(400px,-1350px);
-  text-shadow: 3px 3px black
+  font-size: 1.4vw;
+  transform: translate(0px,-1350px);
+  text-shadow: 3px 3px black;
+  line-height: 1.5;
 }
 
 #sometext {
-  width: 100px;
+  width: auto;
+  margin-left: 30%;
+  margin-right: auto;
+  display: block;
 }
 
 .graphic {
@@ -262,8 +275,9 @@ background: linear-gradient(360deg, rgba(0,0,0,1) 10%, rgba(7,96,0,1) 50%, rgba(
 #speech1 {
   width: 625.6px;
   height: 171.2px;
-  transform: translate(-50px,-1175px);
+  transform: translate(0px,-1175px);
   position: relative;
+  margin-left: -20%;
   z-index: -1;
 }
 
@@ -271,181 +285,190 @@ background: linear-gradient(360deg, rgba(0,0,0,1) 10%, rgba(7,96,0,1) 50%, rgba(
 #speech2 {
   width: 625.6px;
   height: 171.2px;
-  transform: translate(25px,-1025px);
+  transform: translate(0px,-1200px);
   position: relative;
+  margin-left: 65%;
   z-index: -1;
 }
 
 #speech3 {
   width: 625.6px;
   height: 171.2px;
-  transform: translate(-100px,-925px);
+  transform: translate(0px,-1075px);
   position: relative;
+  margin-left: -20%;
   z-index: -1;
 }
 
 #speech4 {
   width: 625.6px;
   height: 171.2px;
-  transform: translate(25px,-800px);
+  transform: translate(25px,-1100px);
   position: relative;
+  margin-left: 65%;
   z-index: -1;
 }
 
 #father {
-  width: 128px;
-  height: 254px;
+  width: 160px;
+  height: 317.5px;
   position: relative;
+  margin-left: 15%;
   animation-name: painting1;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0,1,0,1);
-  transform: translate(300px,-1350px);
+  transform: translate(0px,-1350px);
 }
 
 @keyframes painting1 {
-  1%   {transform: translate(300px,-1350px) rotate(2deg);}
-  2%  {transform: translate(300px,-1350px) rotate(-2deg);}
-  3%  {transform: translate(300px,-1350px) rotate(2deg);}
-  4%  {transform: translate(300px,-1350px) rotate(-2deg);}
-  5% {transform: translate(300px,-1350px) rotate(2deg);}
-  6%  {transform: translate(300px,-1350px) rotate(-2deg);}
-  7%  {transform: translate(300px,-1350px) rotate(2deg);}
-  8%  {transform: translate(300px,-1350px) rotate(-2deg);}
-  9% {transform: translate(300px,-1350px) rotate(2deg);}
-  10%  {transform: translate(300px,-1350px) rotate(-2deg);}
-  11%   {transform: translate(300px,-1350px) rotate(2deg);}
-  12%  {transform: translate(300px,-1350px) rotate(-2deg);}
-  13%  {transform: translate(300px,-1350px) rotate(2deg);}
-  14%  {transform: translate(300px,-1350px) rotate(-2deg);}
-  15% {transform: translate(300px,-1350px) rotate(2deg);}
-  16%  {transform: translate(300px,-1350px) rotate(-2deg);}
-  17%  {transform: translate(300px,-1350px) rotate(2deg);}
-  18%  {transform: translate(300px,-1350px) rotate(-2deg);}
-  19% {transform: translate(300px,-1350px) rotate(1deg);}
-  20%  {transform: translate(300px,-1350px) rotate(-1deg);}
-  100% {transform: translate(300px,-1350px) rotate(0deg);}
+  1%   {transform: translate(0px,-1350px) rotate(2deg);}
+  2%  {transform: translate(0px,-1350px) rotate(-2deg);}
+  3%  {transform: translate(0px,-1350px) rotate(2deg);}
+  4%  {transform: translate(0px,-1350px) rotate(-2deg);}
+  5% {transform: translate(0px,-1350px) rotate(2deg);}
+  6%  {transform: translate(0px,-1350px) rotate(-2deg);}
+  7%  {transform: translate(0px,-1350px) rotate(2deg);}
+  8%  {transform: translate(0px,-1350px) rotate(-2deg);}
+  9% {transform: translate(0px,-1350px) rotate(2deg);}
+  10%  {transform: translate(0px,-1350px) rotate(-2deg);}
+  11%   {transform: translate(0px,-1350px) rotate(2deg);}
+  12%  {transform: translate(0px,-1350px) rotate(-2deg);}
+  13%  {transform: translate(0px,-1350px) rotate(2deg);}
+  14%  {transform: translate(0px,-1350px) rotate(-2deg);}
+  15% {transform: translate(0px,-1350px) rotate(2deg);}
+  16%  {transform: translate(0px,-1350px) rotate(-2deg);}
+  17%  {transform: translate(0px,-1350px) rotate(2deg);}
+  18%  {transform: translate(0px,-1350px) rotate(-2deg);}
+  19% {transform: translate(0px,-1350px) rotate(1deg);}
+  20%  {transform: translate(0px,-1350px) rotate(-1deg);}
+  100% {transform: translate(0px,-1350px) rotate(0deg);}
 }
 
 #mother {
-  width: 128px;
-  height: 254px;
+  width: 160px;
+  height: 317.5px;
   position: relative;
+  margin-left: 40%;
   animation-name: painting2;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0,1,0,1);
-  transform: translate(400px,-1200px);
+  transform: translate(0px,-1200px);
   animation-delay: 3s;
 }
 
 @keyframes painting2 {
-  1%   {transform: translate(400px,-1200px) rotate(2deg);}
-  2%  {transform: translate(400px,-1200px) rotate(-2deg);}
-  3%  {transform: translate(400px,-1200px) rotate(2deg);}
-  4%  {transform: translate(400px,-1200px) rotate(-2deg);}
-  5% {transform: translate(400px,-1200px) rotate(2deg);}
-  6%  {transform: translate(400px,-1200px) rotate(-2deg);}
-  7%  {transform: translate(400px,-1200px) rotate(2deg);}
-  8%  {transform: translate(400px,-1200px) rotate(-2deg);}
-  9% {transform: translate(400px,-1200px) rotate(2deg);}
-  10%  {transform: translate(400px,-1200px) rotate(-2deg);}
-  11%   {transform: translate(400px,-1200px) rotate(2deg);}
-  12%  {transform: translate(400px,-1200px) rotate(-2deg);}
-  13%  {transform: translate(400px,-1200px) rotate(2deg);}
-  14%  {transform: translate(400px,-1200px) rotate(-2deg);}
-  15% {transform: translate(400px,-1200px) rotate(2deg);}
-  16%  {transform: translate(400px,-1200px) rotate(-2deg);}
-  17%  {transform: translate(400px,-1200px) rotate(2deg);}
-  18%  {transform: translate(400px,-1200px) rotate(-2deg);}
-  19% {transform: translate(400px,-1200px) rotate(1deg);}
-  20%  {transform: translate(400px,-1200px) rotate(-1deg);}
-  100% {transform: translate(400px,-1200px) rotate(0deg);}
+  1%   {transform: translate(0px,-1200px) rotate(2deg);}
+  2%  {transform: translate(0px,-1200px) rotate(-2deg);}
+  3%  {transform: translate(0px,-1200px) rotate(2deg);}
+  4%  {transform: translate(0px,-1200px) rotate(-2deg);}
+  5% {transform: translate(0px,-1200px) rotate(2deg);}
+  6%  {transform: translate(0px,-1200px) rotate(-2deg);}
+  7%  {transform: translate(0px,-1200px) rotate(2deg);}
+  8%  {transform: translate(0px,-1200px) rotate(-2deg);}
+  9% {transform: translate(0px,-1200px) rotate(2deg);}
+  10%  {transform: translate(0px,-1200px) rotate(-2deg);}
+  11%   {transform: translate(0px,-1200px) rotate(2deg);}
+  12%  {transform: translate(0px,-1200px) rotate(-2deg);}
+  13%  {transform: translate(0px,-1200px) rotate(2deg);}
+  14%  {transform: translate(0px,-1200px) rotate(-2deg);}
+  15% {transform: translate(0px,-1200px) rotate(2deg);}
+  16%  {transform: translate(0px,-1200px) rotate(-2deg);}
+  17%  {transform: translate(0px,-1200px) rotate(2deg);}
+  18%  {transform: translate(0px,-1200px) rotate(-2deg);}
+  19% {transform: translate(0px,-1200px) rotate(1deg);}
+  20%  {transform: translate(0px,-1200px) rotate(-1deg);}
+  100% {transform: translate(0px,-1200px) rotate(0deg);}
 }
 
 #dance {
-  width: 128px;
-  height: 254px;
+  width: 160px;
+  height: 317.5px;
   position: relative;
+  margin-left: 15%;
   animation-name: painting3;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0,1,0,1);
-  transform: translate(275px,-1100px);
+  transform: translate(0px,-1250px);
   animation-delay: 2s;
 }
 
 @keyframes painting3 {
-  1%   {transform: translate(275px,-1100px) rotate(2deg);}
-  2%  {transform: translate(275px,-1100px) rotate(-2deg);}
-  3%  {transform: translate(275px,-1100px) rotate(2deg);}
-  4%  {transform: translate(275px,-1100px) rotate(-2deg);}
-  5% {transform: translate(275px,-1100px) rotate(2deg);}
-  6%  {transform: translate(275px,-1100px) rotate(-2deg);}
-  7%  {transform: translate(275px,-1100px) rotate(2deg);}
-  8%  {transform: translate(275px,-1100px) rotate(-2deg);}
-  9% {transform: translate(275px,-1100px) rotate(2deg);}
-  10%  {transform: translate(275px,-1100px) rotate(-2deg);}
-  11%   {transform: translate(275px,-1100px) rotate(2deg);}
-  12%  {transform: translate(275px,-1100px) rotate(-2deg);}
-  13%  {transform: translate(275px,-1100px) rotate(2deg);}
-  14%  {transform: translate(275px,-1100px) rotate(-2deg);}
-  15% {transform: translate(275px,-1100px) rotate(2deg);}
-  16%  {transform: translate(275px,-1100px) rotate(-2deg);}
-  17%  {transform: translate(275px,-1100px) rotate(2deg);}
-  18%  {transform: translate(275px,-1100px) rotate(-2deg);}
-  19% {transform: translate(275px,-1100px) rotate(1deg);}
-  20%  {transform: translate(275px,-1100px) rotate(-1deg);}
-  100% {transform: translate(275px,-1100px) rotate(0deg);}
+  1%   {transform: translate(0px,-1250px) rotate(2deg);}
+  2%  {transform: translate(0px,-1250px) rotate(-2deg);}
+  3%  {transform: translate(0px,-1250px) rotate(2deg);}
+  4%  {transform: translate(0px,-1250px) rotate(-2deg);}
+  5% {transform: translate(0px,-1250px) rotate(2deg);}
+  6%  {transform: translate(0px,-1250px) rotate(-2deg);}
+  7%  {transform: translate(0px,-1250px) rotate(2deg);}
+  8%  {transform: translate(0px,-1250px) rotate(-2deg);}
+  9% {transform: translate(0px,-1250px) rotate(2deg);}
+  10%  {transform: translate(0px,-1250px) rotate(-2deg);}
+  11%   {transform: translate(0px,-1250px) rotate(2deg);}
+  12%  {transform: translate(0px,-1250px) rotate(-2deg);}
+  13%  {transform: translate(0px,-1250px) rotate(2deg);}
+  14%  {transform: translate(0px,-1250px) rotate(-2deg);}
+  15% {transform: translate(0px,-1250px) rotate(2deg);}
+  16%  {transform: translate(0px,-1250px) rotate(-2deg);}
+  17%  {transform: translate(0px,-1250px) rotate(2deg);}
+  18%  {transform: translate(0px,-1250px) rotate(-2deg);}
+  19% {transform: translate(0px,-1250px) rotate(1deg);}
+  20%  {transform: translate(0px,-1250px) rotate(-1deg);}
+  100% {transform: translate(0px,-1250px) rotate(0deg);}
 }
 
 #nana {
-  width: 128px;
-  height: 254px;
+  width: 160px;
+  height: 317.5px;
   position: relative;
+  margin-left: 40%;
   animation-name: painting4;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0,1,0,1);
-  transform: translate(400px,-975px);
+  transform: translate(0px,-1100px);
   animation-delay: 4s;
 }
 
 @keyframes painting4 {
-  1%   {transform: translate(400px,-975px) rotate(2deg);}
-  2%  {transform: translate(400px,-975px) rotate(-2deg);}
-  3%  {transform: translate(400px,-975px) rotate(2deg);}
-  4%  {transform: translate(400px,-975px) rotate(-2deg);}
-  5% {transform: translate(400px,-975px) rotate(2deg);}
-  6%  {transform: translate(400px,-975px) rotate(-2deg);}
-  7%  {transform: translate(400px,-975px) rotate(2deg);}
-  8%  {transform: translate(400px,-975px) rotate(-2deg);}
-  9% {transform: translate(400px,-975px) rotate(2deg);}
-  10%  {transform: translate(400px,-975px) rotate(-2deg);}
-  11%   {transform: translate(400px,-975px) rotate(2deg);}
-  12%  {transform: translate(400px,-975px) rotate(-2deg);}
-  13%  {transform: translate(400px,-975px) rotate(2deg);}
-  14%  {transform: translate(400px,-975px) rotate(-2deg);}
-  15% {transform: translate(400px,-975px) rotate(2deg);}
-  16%  {transform: translate(400px,-975px) rotate(-2deg);}
-  17%  {transform: translate(400px,-975px) rotate(2deg);}
-  18%  {transform: translate(400px,-975px) rotate(-2deg);}
-  19% {transform: translate(400px,-975px) rotate(1deg);}
-  20%  {transform: translate(400px,-975px) rotate(-1deg);}
-  100% {transform: translate(400px,-975px) rotate(0deg);}
+  1%   {transform: translate(0px,-1100px) rotate(2deg);}
+  2%  {transform: translate(0px,-1100px) rotate(-2deg);}
+  3%  {transform: translate(0px,-1100px) rotate(2deg);}
+  4%  {transform: translate(0px,-1100px) rotate(-2deg);}
+  5% {transform: translate(0px,-1100px) rotate(2deg);}
+  6%  {transform: translate(0px,-1100px) rotate(-2deg);}
+  7%  {transform: translate(0px,-1100px) rotate(2deg);}
+  8%  {transform: translate(0px,-1100px) rotate(-2deg);}
+  9% {transform: translate(0px,-1100px) rotate(2deg);}
+  10%  {transform: translate(0px,-1100px) rotate(-2deg);}
+  11%   {transform: translate(0px,-1100px) rotate(2deg);}
+  12%  {transform: translate(0px,-1100px) rotate(-2deg);}
+  13%  {transform: translate(0px,-1100px) rotate(2deg);}
+  14%  {transform: translate(0px,-1100px) rotate(-2deg);}
+  15% {transform: translate(0px,-1100px) rotate(2deg);}
+  16%  {transform: translate(0px,-1100px) rotate(-2deg);}
+  17%  {transform: translate(0px,-1100px) rotate(2deg);}
+  18%  {transform: translate(0px,-1100px) rotate(-2deg);}
+  19% {transform: translate(0px,-1100px) rotate(1deg);}
+  20%  {transform: translate(0px,-1100px) rotate(-1deg);}
+  100% {transform: translate(0px,-1100px) rotate(0deg);}
 }
 
 #link1 {
   text-decoration: none;
   color: transparent;
-  transform: translate(150px, 4285px);
+  transform: translate(0px, 4894px);
+  margin-left: 7.20%;
   width: 50px;
 }
 
 #link2 {
   text-decoration: none;
   color: transparent;
-  transform: translate(985px, 4410px);
+  transform: translate(0px, 5000px);
+  margin-left: 68.35%;
   width: 50px;
 }
 
@@ -453,7 +476,9 @@ background: linear-gradient(360deg, rgba(0,0,0,1) 10%, rgba(7,96,0,1) 50%, rgba(
   position: relative;
   z-index: -2;
   display: block;
-  transform: translate(1400px,51px);
+  margin-left: 80%;
+  margin-right: auto;
+  transform: translate(0px,51px);
   width: 112px;
   height: 104px;
 }
