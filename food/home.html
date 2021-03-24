@@ -2,6 +2,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=">
   <title>Brilliant Beef - Home</title>
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/806214473504260116/824135788341231617/BBicon.png">
 </head>
 <body>
   
@@ -9,18 +10,36 @@
   
   <div class="navbar">
 <ul id="navlist">
-  <li><img src="https://cdn.discordapp.com/attachments/806214473504260116/821251184164732928/iconhome.png" class="icon"><a href="index.html">HOME</a></li>
-  <li><img src="https://cdn.discordapp.com/attachments/806214473504260116/821251191563485194/iconburger.png" class="icon"><a href="noun.html">MENU</a></li>
-  <li><img src="https://cdn.discordapp.com/attachments/806214473504260116/821251187822559243/iconlocation.png" class="icon"><a href="#contact">LOCATIONS</a></li>
+  <li><img src="https://cdn.discordapp.com/attachments/806214473504260116/821251184164732928/iconhome.png" class="icon"><a href="home.html">HOME</a></li>
+  <li><img src="https://cdn.discordapp.com/attachments/806214473504260116/821251191563485194/iconburger.png" class="icon"><a href="menu.html">MENU</a></li>
+  <li><img src="https://cdn.discordapp.com/attachments/806214473504260116/821251187822559243/iconlocation.png" class="icon"><a href="locations.html">LOCATIONS</a></li>
 </ul>
   </div>
   
+  <div id="A1">
+    <img src="https://cdn.discordapp.com/attachments/806214473504260116/823642882262958080/reel.png" id="great">
+    <img src="https://cdn.discordapp.com/attachments/806214473504260116/823957086345363466/nintendoR.png" id="nintendoR">
+    <img src="https://cdn.discordapp.com/attachments/806214473504260116/823957083154022420/playstationR.png" id="playstationR">
+    <img src="https://cdn.discordapp.com/attachments/806214473504260116/823985515560173578/incidentalR.png" id="incidentalR">
+    <img src="https://cdn.discordapp.com/attachments/806214473504260116/823646220257984543/pansear.png" id="pansear">
+  </div>
+  
+  <div class="wrapper">
+  <div class="box a">
+    <img src="https://cdn.discordapp.com/attachments/806214473504260116/824350171408236586/BBMugNEW.png" id="mug">
+    </div>
+  <div class="box b">
+    <h1 id="mughead">Don't miss out to recieve an exclusive Brilliant Beef mug!</h1>
+  </div>
+  <div class="box c">
+    <p id="mugtext">Sign up for our Rewards Program and register to recieve a free mug on your next purchase!</p>
+    <a href="menumug.html"><button class="button button1">Order Now</button></a>
+  </div>
+</div>
   
   
   
-  
-</body>
-  
+  </body>
   <style>
     
     #navlist {
@@ -29,6 +48,8 @@
   padding: 0;
   overflow: hidden;
   background-color: white;
+  position: relative;
+  z-index: 5;
 }
 
 li {
@@ -38,7 +59,7 @@ li {
 li a {
   display: block;
   color: #ea3546;
-  font-size: 25px;
+  font-size: 160%;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -64,23 +85,174 @@ body {
 .icon {
   float: left;
   width: 25%;
-  transform: translate(30%,10%)
+  transform: translate(30%,10%);
 }
 
 #topic {
   width: 100%;
 }
-    
-    
-    
-    
-    
+
+#A1 {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: -5;
+}
+
+#pansear {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -4;
+}
+
+#great {
+  position: absolute;
+  width: 50%;
+  animation: theyregreat 2s 1;
+  transform:translate(20%,20%);
+  z-index: 0;
+}
+
+@keyframes theyregreat {
+  from {transform:translate(0%,20%);opacity:0}
+  to {transform:translate(20%,20%);opacity:1}
+}
+
+#nintendoR {
+  position: absolute;
+  width: 40%;
+  transform: translate(145%,175%);
+  animation: ninRev 3s 1;
+}
+
+@keyframes ninRev {
+  0% {transform:translate(155%,175%);opacity:0}
+  50% {transform:translate(155%,175%);opacity:0}
+  100% {transform:translate(145%,175%);opacity:1}
+}
+
+#playstationR {
+  position: absolute;
+  width: 40%;
+  transform: translate(10%,350%);
+  animation: playRev 3s 1;
+}
+
+@keyframes playRev {
+  0% {transform:translate(0%,350%);opacity:0}
+  50% {transform:translate(0%,350%);opacity:0}
+  100% {transform:translate(10%,350%);opacity:1}
+}
+
+#incidentalR {
+  position: absolute;
+  width: 50%;
+  transform: translate(90%,375%);
+  animation: spongeRev 3s 1;
+  overflow: hidden;
+}
+
+@keyframes spongeRev {
+  0% {transform:translate(100%,375%);opacity:0}
+  50% {transform:translate(100%,375%);opacity:0}
+  100% {transform:translate(90%,375%);opacity:1}
+}
+
+.wrapper {
+		display: grid;
+    grid-gap: 10px;
+		grid-template-columns: 60% 40%;
+		background-color: #031927;
+		color: #444;
+    padding: 20px;
+}
+
+	.box {
+		background-color: #96bbbb;
+		color: #fff;
+		border-radius: 5px;
+		padding: 20px;
+		font-size: 150%;
+
+}
+
+	.a {
+		grid-column: 1 / span 1;
+    grid-row: 1 / span 21;
+	}
+	.b {
+		grid-column: 2 ;
+		grid-row: 1 / span 1;
+	}
+
+	.c {
+		grid-column: 2 ;
+		grid-row: 2 / span 20;
+	}
+
+#mug {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 1px 1px 10px black;
+}
+
+#mughead {
+  color: white;
+  font-size: 150%;
+  text-align: center;
+}
+
+#mugtext {
+  color: black;
+  font-size: 90%;
+  text-align: center;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  width: 40%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 90%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #96bbbb; 
+  color: black;
+  width: 40%;
+  display: block;
+  margin: auto;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
     
     
     
     
   </style>
-  
-  
-  
 </html>
