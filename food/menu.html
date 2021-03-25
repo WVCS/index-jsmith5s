@@ -1,1 +1,224 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>Brilliant Beef - Home</title>
+</head>
+<body>
+  
+  <img src="https://cdn.discordapp.com/attachments/806214473504260116/821466964693483540/burgbanner.png" id="topic">
+  
+  <div class="navbar">
+<ul id="navlist">
+  <li><img src="https://cdn.discordapp.com/attachments/806214473504260116/821251184164732928/iconhome.png" class="icon"><a href="index.html">HOME</a></li>
+  <li><img src="https://cdn.discordapp.com/attachments/806214473504260116/821251191563485194/iconburger.png" class="icon"><a href="noun.html">MENU</a></li>
+  <li><img src="https://cdn.discordapp.com/attachments/806214473504260116/821251187822559243/iconlocation.png" class="icon"><a href="#contact">LOCATIONS</a></li>
+</ul>
+  </div>
+  
+  <div class="wrapper">
+  <div class="box a">- SPECIALS -</div>
+    <div class="box b"> <p id="special">DOUBLE FILET</p>
+    <a href="menufilet.html"><img src="https://cdn.discordapp.com/attachments/806214473504260116/824441823971639356/filet.png" id="filet"></a>
+  </div>
+    
+  <div class="box c"> <p id="special">"BRO" BURGER</p>
+    <a href="menuburger.html"><img src="https://cdn.discordapp.com/attachments/806214473504260116/824442388893663313/JOJOBURGER.png" id="burger"></a>
+  </div>
+    
+  <div class="box d"> <p id="special">GRILLED SIRLOIN</p>
+    <a href="menusteak.html"><img src="https://cdn.discordapp.com/attachments/806214473504260116/824441832002813972/steak.png" id="steak"></a>
+  </div>
+    
+  <div class="box e">- FULL MENU -</div>
+  <div class="box f"> <p id="special">MENU</p>
+    <a href="BBMenu.pdf"><img src="https://cdn.discordapp.com/attachments/806214473504260116/824497952197705779/BBMenu.png" id="menu"></a>
+    </div>
+</div>
+  
+  <div class="allaboutus">
+  <div class="cool aboutusa">
+    <h1 class="infohead">ABOUT</h1>
+      <p class="info">Our History</p>
+      <p class="info">FAQs</p>
+      <p class="info">Privacy Policy</p>
+  </div>
+  
+  <div class="cool aboutusb">
+    <h1 class="infohead">CONTACT</h1>
+      <p class="info">Apply Now</p>
+      <p class="info">Report a Problem</p>
+    <p class="info">Make a Suggestion</p>
+  </div>
+  
+  <div class="cool aboutusc">
+    <h1 class="infohead">SERVICES</h1>
+      <p class="info">Rewards Program</p>
+      <p class="info">Delivery</p>
+      <p class="info">Dine-In</p>
+  </div>
+  
+</div>
+  
+  
+  
+  
+</body>
+  <style>
+    
+    #navlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
 
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #ea3546;
+  font-size: 160%;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: fantasy;
+}
+
+li a:hover {
+  background-color: #96bbbb;
+  transition: 0.5s;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+}
+
+body {
+  background-color: #031927;
+}
+
+.icon {
+  float: left;
+  width: 25%;
+  transform: translate(30%,10%);
+}
+
+#topic {
+  width: 100%;
+}
+
+.wrapper {
+		display: grid;
+    grid-gap: 10px;
+		grid-template-columns: 15% 15% 15%;
+		background-color: #031927;
+		color: #444;
+  padding: 10px;
+	}
+
+	.box {
+		background-color: white;
+		color: black;
+		border-radius: 5px;
+		padding: 20px;
+		font-size: 150%;
+	}
+
+	.a {
+		grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+	}
+	.b {
+		grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+	}
+
+	.c {
+		grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+	}
+
+.d {
+		grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+	}
+
+.e {
+		grid-column: 1 / span 4;
+    grid-row: 3 / span 1;
+	}
+
+.f {
+		grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+	}
+
+#filet, #burger, #steak, #menu{
+  width: 100%;
+}
+
+#filet {
+  padding-top: 40px;
+}
+
+#special {
+  text-align: center;
+  
+}
+
+.allaboutus {
+		display: grid;
+    grid-gap: 10px;
+		grid-template-columns: 33% 33% 33%;
+		background-color: black;
+		color: #444;
+	}
+
+	.cool {
+		background-color: #031927;
+		color: #fff;
+		border-radius: 5px;
+		padding: 20px;
+		font-size: 150%;
+
+	}
+
+	.aboutusa {
+		grid-column: 1 / span 1;
+	}
+	.aboutusb {
+		grid-column: 2 ;
+		grid-row: 1 / span 1;
+	}
+	.aboutusc {
+		grid-column: 3 ;
+		grid-row: 1 ;
+	}
+	
+.infohead {
+  color: white;
+  text-align: center;
+  font-size: 150%;
+}
+
+.info {
+  color: #ffcb47;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 80%;
+}
+
+.info:hover {
+  text-decoration: underline;
+}
+    
+    
+  </style>
+</html>
