@@ -1,29 +1,58 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>Jordan's Website</title>
-  <link rel="icon" href="images/webicon.png">
 </head>
 
   <body>
-    <img src="images/jsname.png" class="title">
-  <div class="navbar">
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="noun.html">Noun Project</a></li>
-  <li><a href="convince/home.html">Convince</a></li>
-  <li><a href="food/home.html">Food</a></li>
-  <li><a href="event/home.html">Event</a></li>
-  <li><a href="https://wvcs.github.io/index-sotarks727/team/main.html">Team</a></li>
-  <li><a href="amusement/home.html">Amusement</a></li>
-  <li><a href="store/home.html">Store</a></li>
-  
-</ul>
-  </div>
+    
+    <div class="fourgrid">
+      <div>
+        <button class="wiibutton consoles" onclick="document.location='noun.html'"></button>
+      </div>
+      <div>
+        <button class="wiibutton ghosts" onclick="document.location='convince/home.html'"></button>
+      </div>
+      <div>
+        <button class="wiibutton beef" onclick="document.location='food/home.html'"></button>
+      </div>
+      <div>
+        <button class="wiibutton games" onclick="document.location='event/home.html'"></button>
+      </div>
+    </div>
+    
+    <div class="fourgrid">
+      <div>
+        <button class="wiibutton avengers" onclick="document.location='https://wvcs.github.io/index-sotarks727/team/main.html'"></button>
+      </div>
+      <div>
+        <button class="wiibutton glove" onclick="document.location='amusement/home.html'"></button>
+      </div>
+      <div>
+        <button class="wiibutton kids" onclick="document.location='store/home.html'"></button>
+      </div>
+      <div>
+        <button class="wiibutton blank" onclick="document.location='#'"></button>
+      </div>
+    </div>
+    
+    <div class="fourgrid">
+      <div>
+        <button class="wiibutton blank" onclick="document.location='#'"></button>
+      </div>
+      <div>
+        <button class="wiibutton blank" onclick="document.location='#'"></button>
+      </div>
+      <div>
+        <button class="wiibutton blank" onclick="document.location='#'"></button>
+      </div>
+      <div>
+        <button class="wiibutton blank" onclick="document.location='#'"></button>
+      </div>
+    </div>
+      
 
   
-    <img class="pal" src="images/Pletters.png">
-  
-<img class="pa" src="images/Personal Artifact.png">
     
     
     
@@ -31,8 +60,18 @@
 </body>
 
   <style>
-    
-    ul {
+    html {
+  cursor: url('https://cdn.discordapp.com/attachments/806214473504260116/854384623811166219/Wii_Cursor.cur'),auto;
+}
+
+body {
+  background-image: url('https://cdn.discordapp.com/attachments/806214473504260116/855120393220128788/wiimenu.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: url('https://cdn.discordapp.com/attachments/806214473504260116/854384623811166219/Wii_Cursor.cur'),auto;
+}
+
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -50,12 +89,15 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: fantasy;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: url('https://cdn.discordapp.com/attachments/806214473504260116/854384625854316554/wii-open.cur'),auto;
 }
 
 li a:hover {
   background-color: #c5283d;
   transition: 0.5s;
+  cursor: url('https://cdn.discordapp.com/attachments/806214473504260116/854384625854316554/wii-open.cur'),auto;
 }
 
 .navbar {
@@ -64,18 +106,11 @@ li a:hover {
   top: 0px;
 }
 
-body {
-  background: rgb(167,0,0);
-background: linear-gradient(360deg, rgba(167,0,0,1) 0%, rgba(221,47,47,1) 36%, rgba(255,93,93,1) 100%);
-  
-}
-
 .pal {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
-  height: 30%;
 }
 
 .pa {
@@ -87,11 +122,84 @@ background: linear-gradient(360deg, rgba(167,0,0,1) 0%, rgba(221,47,47,1) 36%, r
 
 .title {
   width: 20%;
-  height: 20%;
+  filter:(drop-shadow:)
+}
+
+.fourgrid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px
+}
+
+.wiibutton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 70px 125px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: url('https://cdn.discordapp.com/attachments/806214473504260116/854384625854316554/wii-open.cur'),auto;
+  width: 50%;
+  transition: 0.2s;
+  border: solid #CECECE 3px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.wiibutton:hover {
+  transition: 0.2s;
+  filter: drop-shadow(0px 0px 5px gray);
+}
+
+.wiibutton:active {
+  transition: 0.2s;
+  cursor: url('https://cdn.discordapp.com/attachments/806214473504260116/854759681841954846/Wii_Cursor_2_Loading...ani'),auto;
+}
+
+.consoles {
+  background-image: url('https://cdn.discordapp.com/attachments/806214473504260116/854744921423872020/consolesframe.png');
+}
+
+.ghosts {
+  background-image: url('https://cdn.discordapp.com/attachments/806214473504260116/854754859584585778/ghostsframe.png');
+}
+
+.beef {
+  background-image: url('https://cdn.discordapp.com/attachments/806214473504260116/855118410702651492/beefframe.png');
+}
+
+.games {
+  background-image: url('https://cdn.discordapp.com/attachments/806214473504260116/855118417680662559/g3frame.png');
+}
+
+.avengers {
+  background-image: url('https://cdn.discordapp.com/attachments/806214473504260116/854744918023340062/avengersframe.png');
+}
+
+.glove {
+  background-image: url('https://cdn.discordapp.com/attachments/806214473504260116/855118417019011072/gloveframe.png');
+}
+
+.kids {
+  background-image: url('https://cdn.discordapp.com/attachments/806214473504260116/855118417300029500/kidsframe.png');
+}
+
+.blank {
+  background-image: url('https://cdn.discordapp.com/attachments/806214473504260116/855118408320155668/wiiframe.png');
 }
     
     
     
+    
+    
+  
+  
   </style>
 
 
